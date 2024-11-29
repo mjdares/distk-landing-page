@@ -71,11 +71,12 @@ const LandingPage = () => {
 					{/* Desktop Navigation */}
 					<div className="hidden md:flex gap-8 text-sm items-center">
 						<a href="#services" className="hover:text-blue-600 transition-colors">Services</a>
+						<a href="#ai-solutions" className="hover:text-blue-600 transition-colors">AI Solutions</a>
 						<a href="#success" className="hover:text-blue-600 transition-colors">Success Stories</a>
 						<a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
 						<div className="flex gap-4">
 							<a
-								href="https://linkedin.com/company/distk"
+								href="https://www.linkedin.com/company/distk-technologies/?viewAsMember=true"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-blue-600 transition-colors"
@@ -83,7 +84,7 @@ const LandingPage = () => {
 								<Linkedin size={20} />
 							</a>
 							<a
-								href="https://twitter.com/distk"
+								href="https://twitter.com/distktechnologies"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-blue-600 transition-colors"
@@ -108,6 +109,13 @@ const LandingPage = () => {
 									Services
 								</a>
 								<a
+									href="#ai-solutionss"
+									className="hover:text-blue-600 transition-colors py-2"
+									onClick={closeMenu}
+								>
+									AI Solutions
+								</a>
+								<a
 									href="#success"
 									className="hover:text-blue-600 transition-colors py-2"
 									onClick={closeMenu}
@@ -123,7 +131,7 @@ const LandingPage = () => {
 								</a>
 								<div className="flex gap-4 py-2">
 									<a
-										href="https://linkedin.com/company/distk"
+										href="https://www.linkedin.com/company/distk-technologies/?viewAsMember=true"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="hover:text-blue-600 transition-colors"
@@ -131,7 +139,7 @@ const LandingPage = () => {
 										<Linkedin size={20} />
 									</a>
 									<a
-										href="https://twitter.com/distk"
+										href="https://twitter.com/distktechnologies"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="hover:text-blue-600 transition-colors"
@@ -149,7 +157,7 @@ const LandingPage = () => {
 			</nav>
 
 			{/* Hero Section */}
-			
+
 			<section className="min-h-screen pt-20 relative overflow-hidden">
 				<div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50" />
 
@@ -238,6 +246,130 @@ const LandingPage = () => {
 				</div>
 			</section>
 
+			{/* AI Solutions Section */}
+			<section id="ai-solutions" className="py-16 md:py-32 px-4 md:px-6 bg-white relative overflow-hidden">
+				<div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-30" />
+				<div className="max-w-7xl mx-auto space-y-8 md:space-y-16 relative">
+					<div className="text-center space-y-4">
+						<h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+							AI-Powered Solutions
+						</h2>
+						<p className="text-slate-600 max-w-2xl mx-auto px-4">
+							Transform your business operations with cutting-edge AI implementations
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+						{/* Marketing Automation Card */}
+						<div className="group p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-blue-100 hover:border-transparent">
+							<div className="mb-4 h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+								<svg
+									className="w-6 h-6 text-blue-600"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+								</svg>
+							</div>
+							<h3 className="text-xl font-semibold mb-3 text-slate-800">Marketing Automation</h3>
+							<p className="text-slate-600 mb-4">
+								Leverage AI to transform your marketing efforts and drive better results.
+							</p>
+							<ul className="space-y-2 text-slate-600">
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Automated content generation and optimization
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									AI-driven campaign management
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Personalized customer journey mapping
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Smart audience segmentation
+								</li>
+							</ul>
+						</div>
+
+						{/* Sales Automation Card */}
+						<div className="group p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-blue-100 hover:border-transparent">
+							<div className="mb-4 h-12 w-12 rounded-lg bg-purple-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+								<svg
+									className="w-6 h-6 text-purple-600"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+								</svg>
+							</div>
+							<h3 className="text-xl font-semibold mb-3 text-slate-800">Sales Automation</h3>
+							<p className="text-slate-600 mb-4">
+								Enhance your sales processes with AI-powered automation and insights.
+							</p>
+							<ul className="space-y-2 text-slate-600">
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Intelligent lead scoring and prioritization
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Automated follow-up sequences
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Predictive sales forecasting
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Smart CRM integration
+								</li>
+							</ul>
+						</div>
+
+						{/* Agentic Implementation Card */}
+						<div className="group p-6 md:p-8 bg-white rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-blue-100 hover:border-transparent">
+							<div className="mb-4 h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+								<svg
+									className="w-6 h-6 text-blue-600"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+							</div>
+							<h3 className="text-xl font-semibold mb-3 text-slate-800">Agentic Implementation</h3>
+							<p className="text-slate-600 mb-4">
+								Deploy intelligent AI agents tailored to your specific business needs.
+							</p>
+							<ul className="space-y-2 text-slate-600">
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Custom AI agent development
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Autonomous workflow automation
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									Intelligent decision support
+								</li>
+								<li className="flex items-start">
+									<span className="text-blue-600 mr-2">•</span>
+									24/7 automated operations
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 			{/* Success Stories Section */}
 			<section id="success" className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
 				<div className="max-w-7xl mx-auto space-y-8 md:space-y-16">
@@ -291,12 +423,12 @@ const LandingPage = () => {
 					<div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-8 px-4">
 						<a href="mailto:contact@distk.com" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
 							<Mail size={20} />
-							contact@distk.com
+							contact@distk.in
 						</a>
-						<a href="tel:+1234567890" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
+						{/* <a href="tel:+1234567890" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
 							<Phone size={20} />
 							+1 (234) 567-890
-						</a>
+						</a>*/}
 					</div>
 					<div className="pt-8">
 						<button className="w-full md:w-auto px-8 py-4 bg-white text-blue-600 rounded-full hover:shadow-lg hover:shadow-blue-700/20 transition-all duration-300 transform hover:-translate-y-1">
@@ -320,13 +452,14 @@ const LandingPage = () => {
 								<li>GTM Strategy</li>
 								<li>Sales Enablement</li>
 								<li>Marketing Excellence</li>
+								<li>AI Solutions</li>
 							</ul>
 						</div>
 						<div>
 							<h3 className="font-semibold mb-4">Company</h3>
 							<ul className="space-y-2 text-slate-400">
 								<li>About Us</li>
-								<li>Careers</li>
+								<li>Success Stories</li>
 								<li>Contact</li>
 							</ul>
 						</div>
@@ -334,7 +467,7 @@ const LandingPage = () => {
 							<h3 className="font-semibold mb-4">Connect</h3>
 							<div className="flex gap-4">
 								<a
-									href="https://linkedin.com/company/distk"
+									href="https://www.linkedin.com/company/distk-technologies/?viewAsMember=true"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-blue-400 transition-colors"
@@ -342,7 +475,7 @@ const LandingPage = () => {
 									<Linkedin size={24} />
 								</a>
 								<a
-									href="https://twitter.com/distk"
+									href="https://twitter.com/distktechnologies"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-blue-400 transition-colors"
