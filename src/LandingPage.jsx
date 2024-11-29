@@ -185,9 +185,9 @@ const LandingPage = () => {
 					{/* Stats Section with added margin */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto px-4 md:px-0 mb-16">  {/* Added mb-16 */}
 						{[
-							{ number: "40%+", label: "Revenue Growth" },
-							{ number: "180+", label: "Clients Enabled" },
-							{ number: "500+", label: "Teams Trained" },
+							{ number: "20%+", label: "Revenue Growth" },
+							{ number: "15+", label: "Clients Enabled" },
+							{ number: "20+", label: "Teams Trained" },
 							{ number: "3x", label: "Average ROI" }
 						].map((stat, i) => (
 							<div key={i} className="p-6 md:p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-50 group">
@@ -382,17 +382,17 @@ const LandingPage = () => {
 						{[
 							{
 								client: "Tech Startup",
-								result: "185% Revenue Growth",
+								result: "100% Revenue Growth",
 								description: "Complete GTM strategy implementation and sales team training"
 							},
 							{
 								client: "E-commerce SME",
-								result: "3x Lead Generation",
+								result: "2x Lead Generation",
 								description: "Marketing optimization and sales process improvement"
 							},
 							{
 								client: "B2B Service Provider",
-								result: "60% Conversion Rate",
+								result: "30% Conversion Rate",
 								description: "Sales enablement and team training program"
 							}
 						].map((story, i) => (
