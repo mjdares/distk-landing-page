@@ -157,8 +157,7 @@ const LandingPage = () => {
 			</nav>
 
 			{/* Hero Section */}
-
-			<section className="min-h-screen pt-20 relative overflow-hidden">
+			<section className="min-h-screen pt-20 relative overflow-hidden pb-32">  {/* Added pb-32 for bottom spacing */}
 				<div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50" />
 
 				<div className="relative max-w-7xl mx-auto px-4 md:px-6 pt-8 md:pt-16">
@@ -172,7 +171,7 @@ const LandingPage = () => {
 						<p className="text-lg md:text-xl text-slate-600 mb-8 px-4 md:px-0">
 							We help startups and SMEs build and execute end-to-end GTM strategies, improve their sales processes, and enable effective marketing - driving real revenue growth.
 						</p>
-						<div className="flex flex-col md:flex-row gap-4 justify-center mb-8 md:mb-16 px-4 md:px-0">
+						<div className="flex flex-col md:flex-row gap-4 justify-center mb-16 px-4 md:px-0">  {/* Increased bottom margin */}
 							<button className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-1">
 								Schedule a Call
 								<ArrowRight className="inline ml-2" size={16} />
@@ -183,8 +182,8 @@ const LandingPage = () => {
 						</div>
 					</div>
 
-					{/* Stats Section */}
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto px-4 md:px-0">
+					{/* Stats Section with added margin */}
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto px-4 md:px-0 mb-16">  {/* Added mb-16 */}
 						{[
 							{ number: "40%+", label: "Revenue Growth" },
 							{ number: "180+", label: "Clients Enabled" },
