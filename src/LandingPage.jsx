@@ -420,9 +420,9 @@ const LandingPage = () => {
 						Let's discuss how we can help you improve your sales and marketing performance
 					</p>
 					<div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-8 px-4">
-						<a href="mailto:contact@distk.com" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
+						<a href="mailto:connect@distk.in" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
 							<Mail size={20} />
-							contact@distk.in
+							connect@distk.in
 						</a>
 						{/* <a href="tel:+1234567890" className="flex items-center justify-center gap-2 hover:text-blue-200 transition-colors">
 							<Phone size={20} />
