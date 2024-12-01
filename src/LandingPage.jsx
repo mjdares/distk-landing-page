@@ -43,6 +43,11 @@ const LandingPage = () => {
 	const closeMenu = () => {
 		setIsMenuOpen(false);
 	};
+	const handleScheduleCall = () => {
+		window.location.href = "your-google-calendar-link";
+		// or for new tab:
+		window.open("https://calendar.app.google/qjPRhJvWUMTNApZJA", "_blank", "noopener,noreferrer");
+	};
 
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -171,10 +176,12 @@ const LandingPage = () => {
 						<p className="text-lg md:text-xl text-slate-600 mb-8 px-4 md:px-0">
 							We help startups and SMEs build and execute end-to-end GTM strategies, improve their sales processes, and enable effective marketing - driving real revenue growth.
 						</p>
-						<div className="flex flex-col md:flex-row gap-4 justify-center mb-16 px-4 md:px-0">  {/* Increased bottom margin */}
-							<button className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-1">
-								Schedule a Call
-								<ArrowRight className="inline ml-2" size={16} />
+						<div className="flex flex-col md:flex-row gap-4 justify-center mb-16 px-4 md:px-0">
+							<button
+								onClick={() => window.open('https://calendar.app.google/qjPRhJvWUMTNApZJA', '_blank')}
+								className="w-full md:w-auto px-8 py-4 bg-white text-blue-600 rounded-full hover:shadow-lg hover:shadow-blue-700/20 transition-all duration-300 transform hover:-translate-y-1"
+							>
+								Schedule a Strategy Call
 							</button>
 							<button className="w-full md:w-auto px-8 py-4 border border-blue-200 text-blue-600 rounded-full hover:bg-blue-50 transition-all duration-300">
 								View Our Results
@@ -430,7 +437,10 @@ const LandingPage = () => {
 						</a>*/}
 					</div>
 					<div className="pt-8">
-						<button className="w-full md:w-auto px-8 py-4 bg-white text-blue-600 rounded-full hover:shadow-lg hover:shadow-blue-700/20 transition-all duration-300 transform hover:-translate-y-1">
+						<button
+							onClick={() => window.open('https://calendar.app.google/qjPRhJvWUMTNApZJA', '_blank')}
+							className="w-full md:w-auto px-8 py-4 bg-white text-blue-600 rounded-full hover:shadow-lg hover:shadow-blue-700/20 transition-all duration-300 transform hover:-translate-y-1"
+						>
 							Schedule a Strategy Call
 						</button>
 					</div>
